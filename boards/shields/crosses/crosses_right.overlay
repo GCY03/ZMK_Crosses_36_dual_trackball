@@ -58,19 +58,14 @@
 
 //오토마우스 레이어 자동 이탈 설정
 &zip_temp_layer {
-    excluded-positions = < //아래는 마우스키
-		13 // F
-		14 // G
-		15 // H
-		16 // J
-		30 // Ctrl
-		31 // Alt
-		32 // Shift
+    excluded-positions = < //아래는 마우스키, 키맵 에디터에서 키맵 조정후 맞춰야함
+		13 // F 좌클릭
+		14 // G 우클릭
     >;
 	require-prior-idle-ms = <200>; //레이어 전환 오작동 방지
 };
 
-//왼쪽 신호 수신
+//왼쪽 트랙볼 신호 수신
 &trackball_peripheral_listener {
 	status = "okay";
 };

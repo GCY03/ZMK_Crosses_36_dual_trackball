@@ -90,7 +90,7 @@
 
 	//스나이프 레이어 설정
     snipe {
-        layers = <5>; //레이어 지정
+        layers = <3>; //레이어 지정
         input-processors = <
             &zip_xy_scaler 1 2 //포인팅 속도 조절
         >;

@@ -1,1 +1,1 @@
-# ZMK_Crosses_36_dual_trackball
+zmk-config for Crosses

@@ -34,7 +34,7 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        cpi = <1200>;
+        cpi = <900>;
     	xy-swap;
     	evt-type = <INPUT_EV_REL>;
     	x-input-code = <INPUT_REL_X>;
@@ -84,7 +84,7 @@
             &zip_xy_to_scroll_mapper
 			&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT //세로 스크롤 방향 반전
 			&zip_scroll_x_scaler 0 1 //가로 스크롤 제한
-            &zip_scroll_scaler 1 22 //스크롤 속도 조절
+            &zip_scroll_scaler 1 20 //스크롤 속도 조절
         >;
     };
 

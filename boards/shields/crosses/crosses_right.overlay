@@ -62,12 +62,16 @@
 		13 // F 좌클릭
 		14 // G 우클릭
     >;
-	require-prior-idle-ms = <200>; //레이어 전환 오작동 방지
+	require-prior-idle-ms = <300>; //레이어 전환 오작동 방지
 };
 
-//왼쪽 트랙볼 신호 수신
+//왼쪽 신호 수신
 &trackball_peripheral_listener {
 	status = "okay";
+	input-processors = <
+		&zip_scroll_x_scaler 0 1 //가로 스크롤 제한
+		&zip_scroll_scaler 1 25 //스크롤 속도 조절
+	>;
 };
 
 &trackball_central_listener {

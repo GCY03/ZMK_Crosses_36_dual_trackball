@@ -57,7 +57,7 @@
 	input-processors = <
 		&zip_ble_report_rate_limit
         &zip_xy_to_scroll_mapper
-        &zip_scroll_x_scaler 0 1 //가로 스크롤 제한
-		&zip_scroll_scaler 1 12 //스크롤 속도 조절
+        //&zip_scroll_x_scaler 0 1 //가로 스크롤 제한, 반응성 문제로 Central에서 처리로 변경
+		//&zip_scroll_scaler 1 12 //스크롤 속도 조절, 반응성 문제로 Central에서 처리로 변경
     >;
 };
